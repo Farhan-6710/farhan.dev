@@ -78,7 +78,7 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default AboutMe;
