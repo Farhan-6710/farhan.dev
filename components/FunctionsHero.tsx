@@ -10,6 +10,7 @@ const FunctionsHero = () => {
             href="mailto:itz.me.farhan6710@gmail.com"
             className="flex items-center w-full gap-1 px-3 py-2 border border-primary group hover:border-strong sm:gap-2 bg-alternative rounded-xl group/email"
           >
+            <div className="flex justify-center items-center gap-2">
             <div className="relative font-mono text-sm text-foreground-muted text-primary">
               <svg
                 stroke="currentColor"
@@ -50,6 +51,7 @@ const FunctionsHero = () => {
             </div>
             <div className="flex-1 font-mono text-xs text-left opacity-1 animate-fade-in text-white md:text-sm">
               Open for Work: Full time / Remote
+            </div>
             </div>
             <div className="text-foreground rounded p-1.5 opacity-1 group-hover:opacity-100 transition-opacity">
               <svg

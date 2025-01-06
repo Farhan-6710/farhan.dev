@@ -10,10 +10,18 @@ export default {
   ],
   theme: {
     extend: {
+      scale: {
+        115: "1.15",
+        125: "1.25",
+      },
+      translate: {
+        "1": "5px", // Match the original CSS
+        "-1": "-5px",
+      },
       gridTemplateColumns: {
         // Custom layout for xl screens
-        'custom-xl': 'calc(25% - 1rem) calc(37.5% - 1rem) calc(37.5% - 1rem)',
-        'custom-sm': 'calc(50% - 1rem) calc(50% - 1rem)'
+        "custom-xl": "calc(25% - 1rem) calc(37.5% - 1rem) calc(37.5% - 1rem)",
+        "custom-sm": "calc(50% - 1rem) calc(50% - 1rem)",
       },
       animation: {
         marquee: "marquee var(--duration) linear infinite",

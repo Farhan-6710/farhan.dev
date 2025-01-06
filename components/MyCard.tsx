@@ -25,7 +25,7 @@ const MyCard = () => {
     <div className="flex flex-col gap-6">
       <div className="flex flex-col items-center justify-center w-full bg-gray-700/10 backdrop-blur-medium border border-gray-800 rounded-2xl p-6 pt-14 h-fit">
         {/* Image Section */}
-        <div className="w-52 h-52 aspect-square relative rounded-full overflow-hidden flex items-center justify-center mb-6">
+        <div className="w-44 aspect-square relative rounded-full overflow-hidden flex items-center justify-center mb-6">
           <Image
             src="/Farhan-AI-beardless.png" // Replace with your image path
             alt="Profile Image"
@@ -36,20 +36,21 @@ const MyCard = () => {
 
         {/* Name and Description Section */}
         <div className="mt-4">
-          <h1 className="text-4xl mb-6 font-semibold text-white">
+          <h1 className="text-3xl sm:text-4xl mb-6 font-semibold text-white">
             Hello ! <br /> I&apos;m <span className="text-primary">Farhan</span>
           </h1>
           <p className="mt-2 mb-6 text-lg text-gray-300">
-            <span className="text-primary">Web Developer</span> with over <br /> 3+ years of experience in crafting dynamic and responsive websites.
+            <span className="text-primary">Web Developer</span> with over <br />{" "}
+            3+ years of experience in crafting dynamic and responsive websites.
           </p>
-          <div className="flex flex-wrap gap-4 mb-6">
+          <div className="flex flex-wrap gap-3 mb-6">
             {/* LinkedIn Button */}
-            <button className="flex items-center border border-gray-700 px-4 2xl:px-4 py-2 rounded-lg hover:border-primary hover:bg-primary hover:shadow-lime hover:text-black transition-all duration-600">
+            <button className="flex items-center border border-gray-700 px-3 2xl:px-4 py-3 rounded-lg hover:border-primary hover:bg-primary hover:shadow-lime hover:text-black transition-all duration-600">
               <Linkedin size={20} />
             </button>
 
             {/* GitHub Button */}
-            <button className="flex items-center border border-gray-700 px-4 2xl:px-4 py-2 rounded-lg hover:border-primary hover:bg-primary hover:shadow-lime hover:text-black transition-all duration-600">
+            <button className="flex items-center border border-gray-700 px-3 2xl:px-4 py-3 rounded-lg hover:border-primary hover:bg-primary hover:shadow-lime hover:text-black transition-all duration-600">
               <Github size={20} />
             </button>
 
@@ -66,7 +67,7 @@ const MyCard = () => {
       <div className="bg-gray-700/10 backdrop-blur-medium border border-gray-800 rounded-2xl p-8">
         <h2 className="text-sm font-semibold mb-4">Current Time</h2>
         <p className="text-4xl sm:text-5xl 2xl:text-6xl font-semibold mb-2">
-          {currentTime ? currentTime : 'Loading...'}
+          {currentTime ? currentTime : "Loading..."}
         </p>
         <button className="flex gap-1 items-center text-md">
           <svg

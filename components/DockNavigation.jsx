@@ -3,13 +3,12 @@
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import './Dock.css';
+import { dockItems } from '@/data/dockItems';
 
 const DockNavigation = ({ position = 'bottom', collapsible = false, responsive = 'bottom' }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [isDockVisible, setDockVisible] = useState(!collapsible);
   const [currentPosition, setCurrentPosition] = useState(position);
-
-  const dockItems = ['Home', 'About', 'My Work', 'Contact'];
 
   const handleMouseEnter = (index) => {
     setHoverIndex(index);
@@ -87,6 +86,7 @@ const DockNavigation = ({ position = 'bottom', collapsible = false, responsive =
     opacity: isDockVisible ? 1 : 0,
     config: { tension: 120, friction: 14 },
   });
+  
 
   return (
     <div
@@ -97,13 +97,13 @@ const DockNavigation = ({ position = 'bottom', collapsible = false, responsive =
       <animated.div className="dock bg-gray-700/10 backdrop-blur-medium border border-gray-800 rounded-2xl" style={{ ...getDockStyle(), ...visibilitySpring }}>
         {dockItems.map((item, index) => (
           <animated.div
-            key={item}
+          key={item.id} // Use a unique identifier
             className="dock-item"
             style={scaleSpring(index)}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <a href="/">{item}</a>
+            <a href="/">{item.component}</a>
           </animated.div>
         ))}
       </animated.div>

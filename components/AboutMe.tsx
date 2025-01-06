@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
-import BoxIconSvg from "./BoxIcon";
+import IdCardSvg from "./IdCardSvg";
 import TechStackSvg from "./TechStackSvg";
 import MyTechStackMarquee from "./MyTechStackMarquee";
 
@@ -31,7 +31,7 @@ const AboutMe = () => {
     <div className="w-full flex flex-col gap-6">
       <div className="bg-gray-700/10 backdrop-blur-medium border border-gray-800 rounded-2xl p-8 pb-0 h-fit">
         <div className="flex items-center gap-4 text-white font-semibold text-xl mb-6">
-          <BoxIconSvg /> <h2>ABOUT ME</h2>
+          <IdCardSvg /> <h2>ABOUT ME</h2>
         </div>
         <h2 className="text-sm 2xl:text-lg mb-6">
           Since the beginning, I&apos;ve been deeply passionate about computer
@@ -68,7 +68,7 @@ const AboutMe = () => {
       </div>
       <div className="bg-gray-700/10 backdrop-blur-medium border border-gray-800 rounded-2xl p-8 pb-0 h-fit">
         <div className="flex items-center gap-4 text-white font-semibold text-xl mb-6">
-          <BoxIconSvg /> <h2>Work Experience</h2>
+          <IdCardSvg /> <h2>Work Experience</h2>
         </div>
         <div className="text-sm 2xl:text-lg text-white mb-6">
           <p className="font-bold text-lg mb-2">Associate Frontend Developer</p>

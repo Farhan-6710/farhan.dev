@@ -6,7 +6,7 @@ import MyWorks from "./MyWorks";
 const HeroSection = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-custom-sm xl:grid-cols-custom-xl gap-6 text-white p-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-custom-sm xl:grid-cols-custom-xl gap-6 text-white p-4 sm:p-6 w-full">
         <MyCard />
         <AboutMe />
         <MyWorks />
