@@ -1,10 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 const DynamicIsland = () => {
   return (
+    <Link href="mailto:itz.me.farhan6710@gmail.com">
     <div className="flex justify-center items-center sm:hidden p-4 pb-0">
-      <div className="flex justify-center items-center gap-3 bg-gray-700/10 backdrop-blur-medium border border-gray-800 rounded-2xl p-4 py-3 w-full max-w-[360px]">
-        <div className="relative font-mono text-sm text-foreground-muted text-primary">
+      <div className="flex justify-center items-center gap-1 bg-gray-700/10 backdrop-blur-medium border border-gray-800 rounded-2xl p-4 py-2 w-full max-w-[400px]">
+        <div className="mr-2 relative font-mono text-sm text-foreground-muted text-primary">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -43,7 +45,7 @@ const DynamicIsland = () => {
           </svg>
         </div>
         <div className="font-mono text-xs text-left opacity-1 animate-fade-in text-white md:text-sm">
-          Open for Work: Full time / Remote
+          Click here to contact me
         </div>
         <div className="text-foreground rounded p-1.5 opacity-1 group-hover:opacity-100 transition-opacity">
           <svg
@@ -60,7 +62,7 @@ const DynamicIsland = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </div></Link>
   );
 };
 

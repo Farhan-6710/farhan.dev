@@ -12,9 +12,6 @@ export default function Home() {
       <DynamicIsland />
       <HeroSection />
       <DockNavigation collapsible={false} position="bottom" responsive="" />
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
     </div>
   );
 }

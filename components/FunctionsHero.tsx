@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FunctionsHero = () => {
@@ -6,7 +7,7 @@ const FunctionsHero = () => {
     <div className="relative items-center justify-center block w-full">
       <div id="functions-hero" className="w-full flex justify-center">
         <div className="opacity-1 animate-fade-in absolute z-20 flex items-center justify-center h-auto ">
-          <a
+          <Link
             href="mailto:itz.me.farhan6710@gmail.com"
             className="flex items-center w-full gap-1 px-3 py-2 border border-primary group hover:border-strong sm:gap-2 bg-alternative rounded-xl group/email"
           >
@@ -67,7 +68,7 @@ const FunctionsHero = () => {
                 <path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path>
               </svg>
             </div>
-          </a>
+          </Link>
         </div>
         <div
           id="dot1"
@@ -83,9 +84,7 @@ const FunctionsHero = () => {
           <p className="text-lg text-white">
             A website is essential in today&apos;s digital landscape because it
             serves as the primary online presence for businesses, organizations,
-            and individuals. It provides a platform to showcase products,
-            services, and information to a global audience, enhancing visibility
-            and credibility.
+            and individuals.
           </p>
         </div>
         <Image
